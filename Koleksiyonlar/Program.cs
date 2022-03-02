@@ -27,7 +27,24 @@ namespace Koleksiyonlar
             Console.WriteLine(isimler2[4]);
             Console.WriteLine(isimler2[0]);
 
+            Dictionary<int, string> listem = new Dictionary<int, string>();
 
+            listem.Add(1, "Ocak");
+
+            Console.WriteLine(listem[1]);
+
+
+            MyDictionary<int, string> haftaninGunleri = new MyDictionary<int, string>();
+
+            haftaninGunleri.Add(1, "Pazartesi");
+
+            Console.WriteLine(haftaninGunleri.Count);
+            
+            haftaninGunleri.Add(2, "Sali");
+
+            Console.WriteLine(haftaninGunleri.Count);
+
+            
         }
     }
 }
