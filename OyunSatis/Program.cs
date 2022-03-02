@@ -8,8 +8,8 @@ namespace OyunSatis
         {
            
             //Musteri Kaydi
-            CustomerService customerService = new CustomerService();
-            Customer customer1 = new Customer { FirstName = "Mehmet Akif", Id = 1, LastName = "Ersoy", TcNo = 19949044458, YearOfBirth = 1984 };
+            CustomerService customerService = new CustomerService(new MernisServiceAdapter());
+            Customer customer1 = new Customer { FirstName = "Mehmet Akif", Id = 1, LastName = "Aksoy", TcNo = 19948044458, YearOfBirth = 1984 };
             Customer customer2 = new Customer { FirstName = "Mehmet Akif", Id = 2, LastName = "Ersoy", TcNo = 19949044458, YearOfBirth = 1985 };
 
             customerService.Save(customer1);
